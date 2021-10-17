@@ -47,6 +47,8 @@ module vga_scandoubler (
     
     parameter [63:0] HSYNC_COUNT = (CLKVIDEO * 3360 * 2)/1000000;
     parameter [63:0] VSYNC_COUNT = (CLKVIDEO * 114320 * 2)/1000000;
+    //parameter [63:0] HSYNC_COUNT = 47;
+    //parameter [63:0] VSYNC_COUNT = 511;
     
     reg [10:0] addrvideo = 11'd0, addrvga = 11'b00000000000;
     reg [9:0] totalhor = 10'd0;
